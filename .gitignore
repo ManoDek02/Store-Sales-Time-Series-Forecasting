@@ -8,3 +8,4 @@ kaggle.json
 .venv/
 venv/
 .png
+.pkl
