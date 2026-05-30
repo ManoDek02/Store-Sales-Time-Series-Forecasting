@@ -58,7 +58,7 @@ def filter_series(df: pd.DataFrame,
         DataFrame trié par date avec index datetime
     """
     mask = (df['store_nbr'] == store_nbr) & (df['family'] == family)
-    cols = ['sales', 'onpromotion', 'dcoilwtico',
+    cols = ['date', 'sales', 'onpromotion', 'dcoilwtico',
             'is_holiday', 'has_promotion', 'transactions']
     return (df[mask][cols]
             .sort_values('date')
